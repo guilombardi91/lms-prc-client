@@ -14,7 +14,7 @@ const CoursePlayer: FC<Props> = ({ videoUrl }) => {
 
   useEffect(() => {
     axios
-      .post("https://elearning-lms-7728bbd846c2.herokuapp.com/api/v1/getVdoCipherOTP", {
+      .post("http://localhost:8000/api/v1/getVdoCipherOTP", {
         videoId: videoUrl,
       })
       .then((res) => {

@@ -148,8 +148,11 @@ interface ILoginRequest {
 }
 
 export const loginUser = CatchAsyncError(
+  
   async (req: Request, res: Response, next: NextFunction) => {
+    console.log('loginuser')
     try {
+      
       const { email, password } = req.body as ILoginRequest;
 
       if (!email || !password) {
@@ -166,9 +169,10 @@ export const loginUser = CatchAsyncError(
       if (!isPasswordMatch) {
         return next(new ErrorHandler("Invalid email or password", 400));
       }
-
+   console.log('dhhdh',user)
       sendToken(user, 200, res);
     } catch (error: any) {
+
       return next(new ErrorHandler(error.message, 400));
     }
   }
