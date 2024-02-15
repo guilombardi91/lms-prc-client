@@ -228,7 +228,7 @@ const Sidebar = () => {
               {!isCollapsed && "Customização"}
             </Typography>
             <Item
-              title="Página Inicial"
+              title="Home"
               to="/admin/hero"
               icon={<WebIcon />}
               selected={selected}
