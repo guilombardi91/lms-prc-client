@@ -50,7 +50,7 @@ const UserAnalytics = ({isDashboard}:Props) => {
             <div className={`${!isDashboard ? "mt-[50px]" : "mt-[50px] dark:bg-[#111C43] shadow-sm pb-5 rounded-sm"}`}>
             <div className={`${isDashboard ? "!ml-8 mb-5" : ''}`}>
             <h1 className={`${styles.title} ${isDashboard && '!text-[20px]'} px-5 !text-start`}>
-               Users Analytics
+               Análise de Usuários
              </h1>
              {
                !isDashboard && (

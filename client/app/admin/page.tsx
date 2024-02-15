@@ -12,8 +12,8 @@ const page = (props: Props) => {
     <div>
       <AdminProtected>
         <Heading
-          title="Elearning - Admin"
-          description="ELearning is a platform for students to learn and get help from teachers"
+          title="Price Univsersity - Admin"
+          description="Descubra tecnologia e programação com a Price Univsersity. Cursos e dicas para todos os níveis. Transforme ideias em realidade!"
           keywords="Programming,MERN,Redux,Machine Learning"
         />
         <div className="flex min-h-screen">

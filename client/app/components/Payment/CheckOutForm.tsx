@@ -52,7 +52,7 @@ const CheckOutForm = ({ data,user,refetch }: Props) => {
     refetch();
     socketId.emit("notification", {
        title: "New Order",
-       message: `You have a new order from ${data.name}`,
+       message: `Você teve uma nova venda ${data.name}`,
        userId: user._id,
     });
     redirect(`/course-access/${data._id}`);
@@ -72,7 +72,7 @@ const CheckOutForm = ({ data,user,refetch }: Props) => {
       <PaymentElement id="payment-element" />
       <button disabled={isLoading || !stripe || !elements} id="submit">
         <span id="button-text" className={`${styles.button} mt-2 !h-[35px]`}>
-          {isLoading ? "Paying..." : "Pay now"}
+          {isLoading ? "Finalizando compra..." : "Pagar Agora"}
         </span>
       </button>
       {/* Show any error or success messages */}

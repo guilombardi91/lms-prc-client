@@ -75,7 +75,7 @@ exports.createOrder = (0, catchAsyncErrors_1.CatchAsyncError)(async (req, res, n
         await notification_Model_1.default.create({
             user: user?._id,
             title: "New Order",
-            message: `You have a new order from ${course?.name}`,
+            message: `Você teve uma nova venda ${course?.name}`,
         });
         course.purchased = course.purchased + 1;
         await course.save();

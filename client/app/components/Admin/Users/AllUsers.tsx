@@ -61,14 +61,14 @@ const AllCourses: FC<Props> = ({ isTeam }) => {
 
   const columns = [
     { field: "id", headerName: "ID", flex: 0.3 },
-    { field: "name", headerName: "Name", flex: 0.5 },
+    { field: "name", headerName: "Nome", flex: 0.5 },
     { field: "email", headerName: "Email", flex: 0.5 },
-    { field: "role", headerName: "Role", flex: 0.5 },
-    { field: "courses", headerName: "Purchased Courses", flex: 0.5 },
-    { field: "created_at", headerName: "Joined At", flex: 0.5 },
+    { field: "role", headerName: "Cargo", flex: 0.5 },
+    { field: "courses", headerName: "Cursos comprados", flex: 0.5 },
+    { field: "created_at", headerName: "Cadastro em", flex: 0.5 },
     {
       field: " ",
-      headerName: "Delete",
+      headerName: "Deletar",
       flex: 0.2,
       renderCell: (params: any) => {
         return (
@@ -237,15 +237,15 @@ const AllCourses: FC<Props> = ({ isTeam }) => {
                     className={`${styles.input} !mt-6`}
                     onChange={(e: any) => setRole(e.target.value)}
                   >
-                    <option value="admin">Admin</option>
-                    <option value="user">User</option>
+                    <option value="admin">Administrador</option>
+                    <option value="user">Usuário</option>
                   </select>
                   <br />
                   <div
                     className={`${styles.button} my-6 !h-[30px]`}
                     onClick={handleSubmit}
                   >
-                    Submit
+                    Enviar
                   </div>
                 </div>
               </Box>
@@ -261,20 +261,20 @@ const AllCourses: FC<Props> = ({ isTeam }) => {
             >
               <Box className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[450px] bg-white dark:bg-slate-900 rounded-[8px] shadow p-4 outline-none">
                 <h1 className={`${styles.title}`}>
-                  Are you sure you want to delete this user?
+                  Você realmente deseja excluir esse usuário?
                 </h1>
                 <div className="flex w-full items-center justify-between mb-6 mt-4">
                   <div
                     className={`${styles.button} !w-[120px] h-[30px] bg-[#57c7a3]`}
                     onClick={() => setOpen(!open)}
                   >
-                    Cancel
+                    Cancelar
                   </div>
                   <div
                     className={`${styles.button} !w-[120px] h-[30px] bg-[#d63f3f]`}
                     onClick={handleDelete}
                   >
-                    Delete
+                    Deletar
                   </div>
                 </div>
               </Box>

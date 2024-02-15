@@ -107,7 +107,7 @@ const DashboardWidgets: FC<Props> = ({ open }) => {
                   {ordersComparePercentage?.currentMonth}
                 </h5>
                 <h5 className="py-2 font-Poppins dark:text-[#45CBA0] text-black text-[20px] font-[400]">
-                  Sales Obtained
+                  Vendas
                 </h5>
               </div>
               <div>
@@ -135,7 +135,7 @@ const DashboardWidgets: FC<Props> = ({ open }) => {
                   {userComparePercentage?.currentMonth}
                 </h5>
                 <h5 className="py-2 font-Poppins dark:text-[#45CBA0] text-black text-[20px] font-[400]">
-                  New Users
+                  Novos Usuários
                 </h5>
               </div>
               <div>
@@ -161,7 +161,7 @@ const DashboardWidgets: FC<Props> = ({ open }) => {
         </div>
         <div className="p-5">
           <h5 className="dark:text-[#fff] text-black text-[20px] font-[400] font-Poppins pb-3">
-            Recent Transactions
+            Transações Recentes
           </h5>
           <AllInvoices isDashboard={true} />
         </div>

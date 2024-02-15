@@ -217,7 +217,7 @@ const CourseContentMedia = ({
           }
         >
           <AiOutlineArrowLeft className="mr-2" />
-          Prev Lesson
+          Aula Anterior
         </div>
         <div
           className={`${
@@ -233,7 +233,7 @@ const CourseContentMedia = ({
             )
           }
         >
-          Next Lesson
+          Próxima Aula
           <AiOutlineArrowRight className="ml-2" />
         </div>
       </div>
@@ -242,7 +242,7 @@ const CourseContentMedia = ({
       </h1>
       <br />
       <div className="w-full p-4 flex items-center justify-between bg-slate-500 bg-opacity-20 backdrop-blur shadow-[bg-slate-700] rounded shadow-inner">
-        {["Overview", "Resources", "Q&A", "Reviews"].map((text, index) => (
+        {["Geral", "Documentos", "Q&A", "Reviews"].map((text, index) => (
           <h5
             key={index}
             className={`800px:text-[20px] cursor-pointer ${
@@ -315,7 +315,7 @@ const CourseContentMedia = ({
               }`}
               onClick={questionCreationLoading ? () => {} : handleQuestion}
             >
-              Submit
+              Enviar
             </div>
           </div>
           <br />
@@ -356,7 +356,7 @@ const CourseContentMedia = ({
                   />
                   <div className="w-full">
                     <h5 className="pl-3 text-[20px] font-[500] dark:text-white text-black ">
-                      Give a Rating <span className="text-red-500">*</span>
+                      De uma nota para o curso <span className="text-red-500">*</span>
                     </h5>
                     <div className="flex w-full ml-2 pb-3">
                       {[1, 2, 3, 4, 5].map((i) =>
@@ -386,7 +386,7 @@ const CourseContentMedia = ({
                       id=""
                       cols={40}
                       rows={5}
-                      placeholder="Write your comment..."
+                      placeholder="Escreva seu comentário..."
                       className="outline-none bg-transparent 800px:ml-3 dark:text-white text-black border border-[#00000027] dark:border-[#ffffff57] w-[95%] 800px:w-full p-2 rounded text-[18px] font-Poppins"
                     ></textarea>
                   </div>
@@ -402,7 +402,7 @@ const CourseContentMedia = ({
                       reviewCreationLoading ? () => {} : handleReviewSubmit
                     }
                   >
-                    Submit
+                    Enviar
                   </div>
                 </div>
               </>
@@ -464,7 +464,7 @@ const CourseContentMedia = ({
                             className="absolute right-0 bottom-1"
                             onClick={handleReviewReplySubmit}
                           >
-                            Submit
+                            Enviar
                           </button>
                         </div>
                       )}
@@ -648,7 +648,7 @@ const CommentItem = ({
                   onClick={handleAnswerSubmit}
                   disabled={answer === "" || answerCreationLoading}
                 >
-                  Submit
+                  Enviar
                 </button>
               </div>
               <br />

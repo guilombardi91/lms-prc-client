@@ -6,58 +6,50 @@ const About = () => {
     <div className="text-black dark:text-white">
       <br />
       <h1 className={`${styles.title} 800px:!text-[45px]`}>
-        What is <span className="text-gradient">Becodemy?</span>
+        O que é a <span className="text-gradient">Price University?</span>
       </h1>
       
       <br />
       <div className="w-[95%] 800px:w-[85%] m-auto">
         <p className="text-[18px] font-Poppins">
-          Are you ready to take your programming skills to the next level? Look
-          no further than Becodemy, the premier programming community dedicated
-          to helping new programmers achieve their goals and reach their full
-          potential.
+          Você está pronto para levar suas habilidades de programação para o 
+          próximo nível? Você encontrou, a Price University é a principal comunidade
+          de programação e tecnologia dedicada a ajudar novos entusiastas e programadores
+          a alcançarem seus objetivos e atingirem seu pleno potencial.
           <br />
           <br />
-          As the founder and CEO of Becodemy, I know firsthand the challenges
-          that come with learning and growing in the programming industry.
-          That&apos;s why I created Becodemy &ndash; to provide new programmers
-          with the resources and support they need to succeed.
+          Nós da Price University, conheçemos em primeira mão os desafios que surgem ao aprender
+          e crescer na indústria da programação e tecnologia. Por isso, criamos os melhores cursos
+          - para fornecer aos novos programadores os recursos e o suporte de que precisam para ter sucesso.
           <br />
           <br />
-          Our YouTube channel is a treasure trove of informative videos on
-          everything from programming basics to advanced techniques. But that&apos;s
-          just the beginning. Our affordable courses are designed to give you
-          the high-quality education you need to succeed in the industry,
-          without breaking the bank.
+          Nosso canal no YouTube é repleto de vídeos informativos, desde o básico da programação até técnicas avançadas.
+          Mas isso é apenas o começo. Nossos cursos são acessíveis e projetados para oferecer a você educação de alta qualidade
+          necessária para ter sucesso na indústria, sem comprometer suas finanças.
           <br />
           <br />
-          At Becodemy, we believe that price should never be a barrier to
-          achieving your dreams. That&apos;s why our courses are priced low
-          &ndash; so that anyone, regardless of their financial situation, can
-          access the tools and knowledge they need to succeed.
+          Na Price, acreditamos que o preço nunca deve ser um obstáculo para alcançar seus sonhos.
+          Por isso, nossos cursos têm preços acessíveis - para que qualquer pessoa, independentemente
+          de sua situação financeira, possa acessar as ferramentas e o conhecimento necessários para ter sucesso.
           <br />
           <br />
-          But Becodemy is more than just a community &ndash; we&apos;re a
-          family. Our supportive community of like-minded individuals is here
-          to help you every step of the way, whether you&apos;re just starting
-          out or looking to take your skills to the next level.
+          Somos mais do que apenas uma comunidade - somos uma família.
+          Estamos aqui para ajudá-lo a cada passo do caminho, seja você um iniciante ou esteja procurando elevar
+          suas habilidades para o próximo nível.
           <br />
           <br />
-          With Becodemy by your side, there&apos;s nothing standing between you
-          and your dream job. Our courses and community will provide you with
-          the guidance, support, and motivation you need to unleash your full
-          potential and become a skilled programmer.
+          Com a Price ao seu lado, nada impede que você alcance o emprego dos seus sonhos.
+          Nossos cursos e comunidade fornecerão a orientação, o suporte e a motivação de que
+          você precisa para liberar seu potencial e se tornar um mestre da tecnologia.
           <br />
           <br />
-          So what are you waiting for? Join the Becodemy family today and let&apos;s
-          conquer the programming industry together! With our affordable
-          courses, informative videos, and supportive community, the sky&apos;s
-          the limit.
+          Então, o que você está esperando? Junte-se à família Price hoje mesmo
+          e vamos conquistar a indústria da tecnologia juntos! Com nossos cursos acessíveis,
+          vídeos informativos e comunidade, o céu é o limite.
         </p>
         <br />
-        <span className="text-[22px]">Shahriarsajeeb&apos;s</span>
         <h5 className="text-[18px] font-Poppins">
-          Founder and CEO of Becodemy
+          Equipe Price University
         </h5>
         <br />
         <br />

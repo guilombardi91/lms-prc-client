@@ -18,8 +18,8 @@ const Page: FC<Props> = (props) => {
   return (
     <div>
       <Heading
-        title="ELearning"
-        description="ELearning is a platform for students to learn and get help from teachers"
+        title="Price University"
+        description="Descubra tecnologia e programação com a Price Univsersity. Cursos e dicas para todos os níveis. Transforme ideias em realidade!"
         keywords="Prograaming,MERN,Redux,Machine Learning"
       />
       <Header

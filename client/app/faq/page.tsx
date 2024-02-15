@@ -15,8 +15,8 @@ const Page = (props: Props) => {
   return (
     <div className="min-h-screen">
       <Heading
-        title="FAQ - Elearning"
-        description="Elearning is a learning management system for helping programmers."
+        title="FAQ - Price Univsersity"
+        description="Price University é um sistema de gerenciamento de aprendizagem para ajudar todos os interessados na área de tecnologia."
         keywords="programming,mern"
       />
       <Header

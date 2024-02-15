@@ -15,8 +15,8 @@ const Page = (props: Props) => {
   return (
     <div>
       <Heading
-        title="About us - Elearning"
-        description="Elearning is a learning management system for helping programmers."
+        title="Sobre nós - Price Univsersity"
+        description="Price University é um sistema de gerenciamento de aprendizagem para ajudar todos os interessados na área de tecnologia."
         keywords="programming,mern"
       />
       <Header

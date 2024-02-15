@@ -58,11 +58,11 @@ const Signup: FC<Props> = ({ setRoute }) => {
 
   return (
     <div className="w-full">
-      <h1 className={`${styles.title}`}>Join to ELearning</h1>
+      <h1 className={`${styles.title}`}>Junte-se à Price University</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label className={`${styles.label}`} htmlFor="email">
-            Enter your Name
+            Digite seu nome
           </label>
           <input
             type="text"
@@ -70,7 +70,7 @@ const Signup: FC<Props> = ({ setRoute }) => {
             value={values.name}
             onChange={handleChange}
             id="name"
-            placeholder="johndoe"
+            placeholder="nome"
             className={`${errors.name && touched.name && "border-red-500"} ${
               styles.input
             }`}
@@ -80,7 +80,7 @@ const Signup: FC<Props> = ({ setRoute }) => {
           )}
         </div>
         <label className={`${styles.label}`} htmlFor="email">
-          Enter your Email
+          Digite seu email
         </label>
         <input
           type="email"
@@ -88,7 +88,7 @@ const Signup: FC<Props> = ({ setRoute }) => {
           value={values.email}
           onChange={handleChange}
           id="email"
-          placeholder="loginmail@gmail.com"
+          placeholder="email"
           className={`${errors.email && touched.email && "border-red-500"} ${
             styles.input
           }`}
@@ -98,7 +98,7 @@ const Signup: FC<Props> = ({ setRoute }) => {
         )}
         <div className="w-full mt-5 relative mb-1">
           <label className={`${styles.label}`} htmlFor="email">
-            Enter your password
+            Digite sua senha
           </label>
           <input
             type={!show ? "password" : "text"}
@@ -106,7 +106,7 @@ const Signup: FC<Props> = ({ setRoute }) => {
             value={values.password}
             onChange={handleChange}
             id="password"
-            placeholder="password!@%"
+            placeholder="senha"
             className={`${
               errors.password && touched.password && "border-red-500"
             } ${styles.input}`}
@@ -129,23 +129,23 @@ const Signup: FC<Props> = ({ setRoute }) => {
           <span className="text-red-500 pt-2 block">{errors.password}</span>
         )}
         <div className="w-full mt-5">
-          <input type="submit" value="Sign Up" className={`${styles.button}`} />
+          <input type="submit" value="Cadastrar" className={`${styles.button}`} />
         </div>
         <br />
         <h5 className="text-center pt-4 font-Poppins text-[14px] text-black dark:text-white">
-          Or join with
+          Ou entre com
         </h5>
         <div className="flex items-center justify-center my-3">
           <FcGoogle size={30} className="cursor-pointer mr-2" />
           <AiFillGithub size={30} className="cursor-pointer ml-2" />
         </div>
         <h5 className="text-center pt-4 font-Poppins text-[14px]">
-          Already have an account?{" "}
+          Não possui uma conta?{" "}
           <span
             className="text-[#2190ff] pl-1 cursor-pointer"
             onClick={() => setRoute("Login")}
           >
-            Sign in
+            Inscreva-se
           </span>
         </h5>
       </form>

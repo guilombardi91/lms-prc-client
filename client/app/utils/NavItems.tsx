@@ -7,15 +7,15 @@ export const navItemsData = [
     url: "/",
   },
   {
-    name: "Courses",
+    name: "Cursos",
     url: "/courses",
   },
   {
-    name: "About",
+    name: "Sobre",
     url: "/about",
   },
   {
-    name: "Policy",
+    name: "Privacidade",
     url: "/policy",
   },
   {
@@ -54,7 +54,7 @@ const NavItems: React.FC<Props> = ({ activeItem, isMobile }) => {
             <Link href={"/"} passHref>
               <span
                 className={`text-[25px] font-Poppins font-[500] text-black dark:text-white`}
-              >ELearning</span>
+              >Price University</span>
             </Link>
           </div>
             {navItemsData &&

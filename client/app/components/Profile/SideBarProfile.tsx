@@ -41,7 +41,7 @@ const SideBarProfile: FC<Props> = ({
           className="w-[20px] h-[20px] 800px:w-[30px] 800px:h-[30px] cursor-pointer rounded-full"
         />
         <h5 className="pl-2 800px:block hidden font-Poppins dark:text-white text-black">
-          My Account
+          Minha Conta
         </h5>
       </div>
       <div
@@ -52,7 +52,7 @@ const SideBarProfile: FC<Props> = ({
       >
         <RiLockPasswordLine size={20} className="dark:text-white text-black"  />
         <h5 className="pl-2 800px:block hidden font-Poppins dark:text-white text-black">
-          Change Password
+          Mudar Senha
         </h5>
       </div>
       <div
@@ -63,7 +63,7 @@ const SideBarProfile: FC<Props> = ({
       >
         <SiCoursera size={20} className="dark:text-white text-black"  />
         <h5 className="pl-2 800px:block hidden font-Poppins dark:text-white text-black">
-          Enrolled Courses
+          Cursos Inscritos
         </h5>
       </div>
       {user.role === "admin" && (
@@ -87,7 +87,7 @@ const SideBarProfile: FC<Props> = ({
       >
         <AiOutlineLogout size={20} className="dark:text-white text-black" />
         <h5 className="pl-2 800px:block hidden font-Poppins dark:text-white text-black">
-          Log Out
+          Sair
         </h5>
       </div>
     </div>

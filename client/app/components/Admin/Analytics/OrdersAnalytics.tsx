@@ -72,7 +72,7 @@ export default function OrdersAnalytics({ isDashboard }: Props) {
                 isDashboard && "!text-[20px]"
               } px-5 !text-start`}
             >
-              Orders Analytics
+              Análise de Pedidos
             </h1>
             {!isDashboard && (
               <p className={`${styles.label} px-5`}>

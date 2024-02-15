@@ -57,8 +57,8 @@ const Page = (props: Props) => {
           />
           <div className="w-[95%] 800px:w-[85%] m-auto min-h-[70vh]">
             <Heading
-              title={"All courses - Elearning"}
-              description={"Elearning is a programming community."}
+              title={"Nossos cursos - Price Univsersity"}
+              description={"Price Univsersity is a programming community."}
               keywords={
                 "programming community, coding skills, expert insights, collaboration, growth"
               }
@@ -71,7 +71,7 @@ const Page = (props: Props) => {
                 } m-3 px-3 rounded-[30px] flex items-center justify-center font-Poppins cursor-pointer`}
                 onClick={() => setCategory("All")}
               >
-                All
+                Todas
               </div>
               {categories &&
                 categories.map((item: any, index: number) => (
@@ -92,7 +92,7 @@ const Page = (props: Props) => {
             {
                 courses && courses.length === 0 && (
                     <p className={`${styles.label} justify-center min-h-[50vh] flex items-center`}>
-                    {search ? "No courses found!" : "No courses found in this category. Please try another one!"}
+                    {search ? "No courses found!" : "Nenhum curso encontrado nesta categoria. Por favor, tente outro!"}
                   </p>
                 )
             }

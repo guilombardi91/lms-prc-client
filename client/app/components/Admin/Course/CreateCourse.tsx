@@ -47,7 +47,7 @@ const CreateCourse = (props: Props) => {
       videoUrl: "",
       title: "",
       description: "",
-      videoSection: "Untitled Section",
+      videoSection: "Nome do Módulo",
       videoLength: "",
       links: [
         {

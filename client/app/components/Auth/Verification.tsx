@@ -77,7 +77,7 @@ const Verification: FC<Props> = ({ setRoute }) => {
 
   return (
     <div>
-      <h1 className={`${styles.title}`}>Verify Your Account</h1>
+      <h1 className={`${styles.title}`}>Verifique sua conta</h1>
       <br />
       <div className="w-full flex items-center justify-center mt-2">
         <div className="w-[80px] h-[80px] rounded-full bg-[#497DF2] flex items-center justify-center">
@@ -108,7 +108,7 @@ const Verification: FC<Props> = ({ setRoute }) => {
       <br />
       <div className="w-full flex justify-center">
         <button className={`${styles.button}`} onClick={verificationHandler}>
-          Verify OTP
+          Verificação OTP
         </button>
       </div>
       <br />

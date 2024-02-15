@@ -58,7 +58,7 @@ const CourseData: FC<Props> = ({
     <div className="w-[80%] m-auto mt-24 block">
       <div>
         <label className={`${styles.label} text-[20px]`} htmlFor="email">
-          What are the benefits for students in this course?
+          O que será ensinado no Curso?
         </label>
         <br />
         {benefits.map((benefit: any, index: number) => (
@@ -66,7 +66,7 @@ const CourseData: FC<Props> = ({
             type="text"
             key={index}
             name="Benefit"
-            placeholder="You will be able to build a full stack LMS Platform..."
+            placeholder="Você aprenderá...."
             required
             className={`${styles.input} my-2`}
             value={benefit.title}
@@ -81,7 +81,7 @@ const CourseData: FC<Props> = ({
 
       <div>
         <label className={`${styles.label} text-[20px]`} htmlFor="email">
-        What are the prerequisites for starting this course?
+        Quais os pré-requisitos para iniciar o curso?
         </label>
         <br />
         {prerequisites.map((prerequisites: any, index: number) => (
@@ -89,7 +89,7 @@ const CourseData: FC<Props> = ({
             type="text"
             key={index}
             name="prerequisites"
-            placeholder="You need basic knowledge of MERN stack"
+            placeholder="Você precisará...."
             required
             className={`${styles.input} my-2`}
             value={prerequisites.title}
@@ -107,13 +107,13 @@ const CourseData: FC<Props> = ({
           className="w-full 800px:w-[180px] flex items-center justify-center h-[40px] bg-[#37a39a] text-center text-[#fff] rounded mt-8 cursor-pointer"
           onClick={() => prevButton()}
         >
-          Prev
+          Anterior
         </div>
         <div
           className="w-full 800px:w-[180px] flex items-center justify-center h-[40px] bg-[#37a39a] text-center text-[#fff] rounded mt-8 cursor-pointer"
           onClick={() => handleOptions()}
         >
-          Next
+          Próximo
         </div>
       </div>
     </div>

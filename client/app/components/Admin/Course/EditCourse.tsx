@@ -76,7 +76,7 @@ const EditCourse:FC<Props> = ({id}) => {
       videoUrl: "",
       title: "",
       description: "",
-      videoSection: "Untitled Section",
+      videoSection: "Nome do Módulo",
       links: [
         {
           title: "",

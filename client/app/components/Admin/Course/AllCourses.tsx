@@ -27,13 +27,13 @@ const AllCourses = (props: Props) => {
   const [deleteCourse, { isSuccess, error }] = useDeleteCourseMutation({});
   const columns = [
     { field: "id", headerName: "ID", flex: 0.5 },
-    { field: "title", headerName: "Course Title", flex: 1 },
-    { field: "ratings", headerName: "Ratings", flex: 0.5 },
-    { field: "purchased", headerName: "Purchased", flex: 0.5 },
-    { field: "created_at", headerName: "Created At", flex: 0.5 },
+    { field: "title", headerName: "Título do Curso", flex: 1 },
+    { field: "ratings", headerName: "Nota", flex: 0.5 },
+    { field: "purchased", headerName: "Vendas", flex: 0.5 },
+    { field: "created_at", headerName: "Criado em", flex: 0.5 },
     {
       field: "  ",
-      headerName: "Edit",
+      headerName: "Editar",
       flex: 0.2,
       renderCell: (params: any) => {
         return (
@@ -47,7 +47,7 @@ const AllCourses = (props: Props) => {
     },
     {
       field: " ",
-      headerName: "Delete",
+      headerName: "Deletar",
       flex: 0.2,
       renderCell: (params: any) => {
         return (

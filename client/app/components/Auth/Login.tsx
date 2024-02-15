@@ -39,7 +39,7 @@ const Login: FC<Props> = ({ setRoute, setOpen,refetch }) => {
 
   useEffect(() => {
     if (isSuccess) {
-      toast.success("Login Successfully!");
+      toast.success("Login feito com Sucesso!");
       setOpen(false);
       refetch();
     }
@@ -55,10 +55,10 @@ const Login: FC<Props> = ({ setRoute, setOpen,refetch }) => {
 
   return (
     <div className="w-full">
-      <h1 className={`${styles.title}`}>Login with ELearning</h1>
+      <h1 className={`${styles.title}`}>Login - Price University</h1>
       <form onSubmit={handleSubmit}>
         <label className={`${styles.label}`} htmlFor="email">
-          Enter your Email
+          Digite seu Email
         </label>
         <input
           type="email"
@@ -66,7 +66,7 @@ const Login: FC<Props> = ({ setRoute, setOpen,refetch }) => {
           value={values.email}
           onChange={handleChange}
           id="email"
-          placeholder="loginmail@gmail.com"
+          placeholder="email"
           className={`${errors.email && touched.email && "border-red-500"} ${
             styles.input
           }`}
@@ -76,7 +76,7 @@ const Login: FC<Props> = ({ setRoute, setOpen,refetch }) => {
         )}
         <div className="w-full mt-5 relative mb-1">
           <label className={`${styles.label}`} htmlFor="email">
-            Enter your password
+            Digite sua senha
           </label>
           <input
             type={!show ? "password" : "text"}
@@ -84,7 +84,7 @@ const Login: FC<Props> = ({ setRoute, setOpen,refetch }) => {
             value={values.password}
             onChange={handleChange}
             id="password"
-            placeholder="password!@%"
+            placeholder="senha"
             className={`${
               errors.password && touched.password && "border-red-500"
             } ${styles.input}`}
@@ -111,7 +111,7 @@ const Login: FC<Props> = ({ setRoute, setOpen,refetch }) => {
         </div>
         <br />
         <h5 className="text-center pt-4 font-Poppins text-[14px] text-black dark:text-white">
-          Or join with
+          Ou entre com:
         </h5>
         <div className="flex items-center justify-center my-3">
           <FcGoogle size={30} className="cursor-pointer mr-2"
@@ -120,12 +120,12 @@ const Login: FC<Props> = ({ setRoute, setOpen,refetch }) => {
           <AiFillGithub size={30} className="cursor-pointer ml-2" onClick={() => signIn("github")} />
         </div>
         <h5 className="text-center pt-4 font-Poppins text-[14px]">
-          Not have any account?{" "}
+          Não possui uma conta?{" "}
           <span
             className="text-[#2190ff] pl-1 cursor-pointer"
             onClick={() => setRoute("Sign-Up")}
           >
-            Sign up
+            Inscreva-se
           </span>
         </h5>
       </form>
