@@ -9,8 +9,8 @@
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only server.ts",
-    "build": "next build",
-    "start": "next start"
+    "start":"node build/server.js",
+    "build":"tsc"
   },
   "author": "shahriar sajeeb",
   "license": "ISC",
